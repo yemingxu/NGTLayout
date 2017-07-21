@@ -13,6 +13,11 @@
 		12383B771F21E0C80006E0C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12383B751F21E0C80006E0C0 /* Main.storyboard */; };
 		12383B791F21E0C80006E0C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12383B781F21E0C80006E0C0 /* Assets.xcassets */; };
 		12383B7C1F21E0C80006E0C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12383B7A1F21E0C80006E0C0 /* LaunchScreen.storyboard */; };
+		12383BC21F21F8A40006E0C0 /* NGTPosition.m in Sources */ = {isa = PBXBuildFile; fileRef = 12383BB91F21F8A40006E0C0 /* NGTPosition.m */; };
+		12383BC31F21F8A40006E0C0 /* NGTPositionMake.m in Sources */ = {isa = PBXBuildFile; fileRef = 12383BBB1F21F8A40006E0C0 /* NGTPositionMake.m */; };
+		12383BC41F21F8A40006E0C0 /* UIView+NGTPosition.m in Sources */ = {isa = PBXBuildFile; fileRef = 12383BBD1F21F8A40006E0C0 /* UIView+NGTPosition.m */; };
+		12383BC51F21F8A40006E0C0 /* UIView+NGTPositionDo.m in Sources */ = {isa = PBXBuildFile; fileRef = 12383BBF1F21F8A40006E0C0 /* UIView+NGTPositionDo.m */; };
+		12383BC61F21F8A40006E0C0 /* UIView+NGTSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 12383BC11F21F8A40006E0C0 /* UIView+NGTSwizzling.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,17 @@
 		12383B781F21E0C80006E0C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12383B7B1F21E0C80006E0C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12383B7D1F21E0C80006E0C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12383BB71F21F8A40006E0C0 /* NGTLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGTLayout.h; sourceTree = "<group>"; };
+		12383BB81F21F8A40006E0C0 /* NGTPosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGTPosition.h; sourceTree = "<group>"; };
+		12383BB91F21F8A40006E0C0 /* NGTPosition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGTPosition.m; sourceTree = "<group>"; };
+		12383BBA1F21F8A40006E0C0 /* NGTPositionMake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGTPositionMake.h; sourceTree = "<group>"; };
+		12383BBB1F21F8A40006E0C0 /* NGTPositionMake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGTPositionMake.m; sourceTree = "<group>"; };
+		12383BBC1F21F8A40006E0C0 /* UIView+NGTPosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+NGTPosition.h"; sourceTree = "<group>"; };
+		12383BBD1F21F8A40006E0C0 /* UIView+NGTPosition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+NGTPosition.m"; sourceTree = "<group>"; };
+		12383BBE1F21F8A40006E0C0 /* UIView+NGTPositionDo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+NGTPositionDo.h"; sourceTree = "<group>"; };
+		12383BBF1F21F8A40006E0C0 /* UIView+NGTPositionDo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+NGTPositionDo.m"; sourceTree = "<group>"; };
+		12383BC01F21F8A40006E0C0 /* UIView+NGTSwizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+NGTSwizzling.h"; sourceTree = "<group>"; };
+		12383BC11F21F8A40006E0C0 /* UIView+NGTSwizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+NGTSwizzling.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +78,7 @@
 				12383B701F21E0C80006E0C0 /* AppDelegate.m */,
 				12383B721F21E0C80006E0C0 /* ViewController.h */,
 				12383B731F21E0C80006E0C0 /* ViewController.m */,
+				12383BB61F21F8A40006E0C0 /* NGTLayout */,
 				12383B751F21E0C80006E0C0 /* Main.storyboard */,
 				12383B781F21E0C80006E0C0 /* Assets.xcassets */,
 				12383B7A1F21E0C80006E0C0 /* LaunchScreen.storyboard */,
@@ -77,6 +94,25 @@
 				12383B6D1F21E0C80006E0C0 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		12383BB61F21F8A40006E0C0 /* NGTLayout */ = {
+			isa = PBXGroup;
+			children = (
+				12383BB71F21F8A40006E0C0 /* NGTLayout.h */,
+				12383BB81F21F8A40006E0C0 /* NGTPosition.h */,
+				12383BB91F21F8A40006E0C0 /* NGTPosition.m */,
+				12383BBA1F21F8A40006E0C0 /* NGTPositionMake.h */,
+				12383BBB1F21F8A40006E0C0 /* NGTPositionMake.m */,
+				12383BBC1F21F8A40006E0C0 /* UIView+NGTPosition.h */,
+				12383BBD1F21F8A40006E0C0 /* UIView+NGTPosition.m */,
+				12383BBE1F21F8A40006E0C0 /* UIView+NGTPositionDo.h */,
+				12383BBF1F21F8A40006E0C0 /* UIView+NGTPositionDo.m */,
+				12383BC01F21F8A40006E0C0 /* UIView+NGTSwizzling.h */,
+				12383BC11F21F8A40006E0C0 /* UIView+NGTSwizzling.m */,
+			);
+			name = NGTLayout;
+			path = ../../NGTLayout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,8 +188,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				12383B741F21E0C80006E0C0 /* ViewController.m in Sources */,
+				12383BC31F21F8A40006E0C0 /* NGTPositionMake.m in Sources */,
 				12383B711F21E0C80006E0C0 /* AppDelegate.m in Sources */,
+				12383BC21F21F8A40006E0C0 /* NGTPosition.m in Sources */,
 				12383B6E1F21E0C80006E0C0 /* main.m in Sources */,
+				12383BC51F21F8A40006E0C0 /* UIView+NGTPositionDo.m in Sources */,
+				12383BC61F21F8A40006E0C0 /* UIView+NGTSwizzling.m in Sources */,
+				12383BC41F21F8A40006E0C0 /* UIView+NGTPosition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,9 +313,14 @@
 		12383B811F21E0C80006E0C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7CXCX9P8W5;
+				ENABLE_BITCODE = NO;
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = NGTLayoutDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.NGTLayoutDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -284,9 +330,14 @@
 		12383B821F21E0C80006E0C0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7CXCX9P8W5;
+				ENABLE_BITCODE = NO;
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = NGTLayoutDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.NGTLayoutDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
